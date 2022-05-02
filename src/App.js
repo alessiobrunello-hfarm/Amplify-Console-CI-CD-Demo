@@ -1,11 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import TestComponent from "./components/TestComponent";
-import { TestContextProvider } from "./stores/TestContext";
 
 function App() {
   return (
-    <TestContextProvider>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -21,9 +18,7 @@ function App() {
             Learn React
           </a>
         </header>
-        <TestComponent />
       </div>
-    </TestContextProvider>
   );
 }
 
